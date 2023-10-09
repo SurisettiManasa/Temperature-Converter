@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 0, 0.7),rgba(255, 255, 0, 0.7)), url(./images/5jdY8iX.jpg);
+    font-family: monospace, sans-serif;
+    color: #f5f7f3;
+}
+
+.container {
+    background: rgba(10, 10, 10, 0.997);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 85%;
+    max-width: 800px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 33px;
+    font-weight: medium;
+}
+
+.temp-container {
+    width: 100%;
+    padding: 15px;
+    font-weight: medium;
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 60%;
+    font-family: monospace;
+    padding: 5px;
+    outline: none;
+    background: #fbfcfc;
+    border-color: rgba(255, 255, 255, 0.6);
+    color: rgb(6, 6, 6);
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: rgb(20, 19, 19);
+}
+
+/* Responsive CSS */
+@media (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+    input {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 60%;
+    }
+
+    input {
+        width: 40%;
+    }
+}
+
